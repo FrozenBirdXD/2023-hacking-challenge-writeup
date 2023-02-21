@@ -124,6 +124,6 @@ to the console.
 
   When we give the program the encryped message "11 1c 14 1b 11 05 0a 0a 24 1c 2d 37 15 36 38 30 20 10 2d 1d 16 0d 35" provided by the challenge, this is the output:
 
-> Decrypted message: HSAINNOS{ThePowerOfXOR}
+    Decrypted message: HSAINNOS{ThePowerOfXOR}
 
 This is the flag for the problem. Flag: **HSAINNOS{ThePowerOfXOR}**.
