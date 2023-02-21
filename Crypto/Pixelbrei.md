@@ -16,7 +16,7 @@ hidden in the colors of the image. When you upload the first image to StegOnline
   <img src="https://user-images.githubusercontent.com/118717731/220293419-99115363-b7d5-495b-aefb-3767d70b969e.png" alt="channel1analysed" width="450"/>
 </p>
 
-And there you have it. The flag is conveniently written in the middle of the image. Flag: **HSAINNOS{57820d3c}**
+And there you have it. The flag is conveniently written in the middle of the image. Flag: **HSAINNOS{57820d3c}**.
 
 ## Intended way
 There are 3 images given, but only 1 is needed to find to solution, why? The intended way to solve this problem is to use additive mixing. Additive mixing is used 
@@ -68,5 +68,5 @@ The resulting image is called "result_image.png" and when we view it, it looks l
   <img src="https://user-images.githubusercontent.com/118717731/220298891-2a4b2c58-67d4-4514-8c0b-b4322997dfc0.png" alt="channel1analysed" width="450"/>
 </p>
 
-And again the same as before. The flag was hidden in the three images. Flag: **HSAINNOS{57820d3c}**
+And again the same as before. The flag was hidden in the three images. Flag: **HSAINNOS{57820d3c}**.
 
