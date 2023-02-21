@@ -1,4 +1,4 @@
-# The first warmup challenge: "Let's START"
+# The first warmup challenge: "Let's START" | 10 Points
 We are given a text file called "letsstart.txt" with the following content:
 
     QIJG KIIJGMI NXPID ZDN JIGGID,  NXQ UQM IUD CIUQHUIB TÜG IUDI PADAXBHJXCIMUQFJI QZCQMUMZMUAD. NXQ TBXK BXZMIM: JQXUDDAQ{KACCBINRKAAL}  PUM TGIZDNBUFJID KGÜßID WJUMI JXMQ TAG TZMZGI
