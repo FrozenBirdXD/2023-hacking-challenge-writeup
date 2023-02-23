@@ -1,4 +1,4 @@
-# The third task of Security4Fun!: Compressed | 50 Points
+# A broken file?: Compressed | 50 Points
 For this challenge only a zip archive called *compressed.zip* is given. But Windows cannot open it, since it is an invalid zip archive.
 
 Again there are multiple ways to find the solution:
