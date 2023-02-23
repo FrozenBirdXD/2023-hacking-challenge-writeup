@@ -1,8 +1,7 @@
-# A task in ReverseMe: Strings | 50 Points
+# So many strings!: Strings | 50 Points
 For this problem, a windows executable called *Strings.exe* is provided. If you run the program nothing happens. 
 ### Solution
-Since the file and the task is called "strings", the first thing to do is to get all of the strings found in the file. This can be done using a variety of tools, but
-for this example "**[Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings)**" is used, one of the utilities provided by the Windows 
+Since the file and the task are called "strings", we can assume that the task requires us to extract all the strings contained in the executable file. This can be done using a variety of tools, but for this example "**[Strings](https://learn.microsoft.com/en-us/sysinternals/downloads/strings)**" is used, one of the utilities provided by the Windows 
 [Sysinternal Suite](https://learn.microsoft.com/en-us/sysinternals/) from Microsoft. 
 
 To run the command, just type "strings" and the file to analyse behind that:
@@ -12,4 +11,6 @@ The output for this will be lots of Strings that are found in the specified file
 the rest, and that is of interest to us:
 > ![solution](https://user-images.githubusercontent.com/118717731/220316185-d220a48f-f2c2-4ce5-9ee7-c25eadccb55f.png)
 
-If you look at the first letter or character in each row, you get the hidden flag. Flag: **HSAINNOS{Strings}**.
+If you look at the first letter or character in each row, you get the hidden flag. 
+
+Flag: **HSAINNOS{Strings}**.
