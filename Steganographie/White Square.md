@@ -44,4 +44,6 @@ our case displays all white pixels.
 The image was transformed from using a lookup table to directly representing each pixel as a shade of gray when the color mode was set to grayscale. This enabled 
 for additional grayscale values to be utilized in the picture, revealing the before hidden QR-code. This is a form of [steganography](https://en.wikipedia.org/wiki/Steganography).
 
-When the QR-code is scanned, a note with the flag in plaintext is given. Flag: **HSAINNOS{SquaringTheCircle}**.
+When the QR-code is scanned, a note with the flag in plain text is given. 
+
+Flag: **HSAINNOS{SquaringTheCircle}**.
