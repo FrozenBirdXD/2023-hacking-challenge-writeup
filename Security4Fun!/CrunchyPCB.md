@@ -1,4 +1,4 @@
-# The first challenge in Security4Fun!: CrunchyPCB | 30 Points
+# The hidden flag on a PCB: CrunchyPCB | 30 Points
 Here we're given a text file called "*board.txt*" with the following content:
 ```txt
 The basic pcb files for KiCad were provided by the https://github.com/OLIMEX/OLINUXINO/tree/master/HARDWARE/A64-OLinuXino
@@ -19,16 +19,21 @@ Project. DO NOT PRINT OR USE THIS PCB, IT IS BROKEN!!!
     ...
 ```
 ## Solution
-The file already shows us that the file provided is intended to be viewed with KiCad and is supposed to be a pcb, with the flag probably hidden on it. 
+The file already shows us that it's intended to be viewed with KiCad and is supposed to be a pcb, with the flag probably hidden on it. 
 [KiCad](https://www.kicad.org/download/) is an open-source software suite used for electronic design automation (EDA) that allows users to create schematic 
-diagrams and printed circuit board (PCB) layouts. When KiCad is opened we need to create a new project. There we see that the correct file extension for our 
+diagrams and printed circuit board (PCB) layouts. Then open KiCad and create a new project. There we see that the correct file extension for our 
 pcb is "*.kicad_pcb*". 
 
-But when we try to open the file with the correct extension and the pcb editor this error is shown: "**Error loading PCB. Expecting '(' in ...**". This shows us that
-the first comment in the given file needs to be removed. After doing that it works and the pcb can now be seen:
-![1](https://user-images.githubusercontent.com/118717731/220567652-5d880e35-4a34-4b83-b95e-611fb52e9a9f.png)
+But when we try to open the file with the correct extension and the pcb editor, this error is shown: "**Error loading PCB. Expecting '(' in ...**". This shows us that
+the first comment in the given file needs to be removed for it to open correctly. That is because this comment does not follow the correct syntax for KiCad files 
+and causes an error. After doing that, it works and the pcb can now be seen:
 
-This is very cluttered and the flag is not visible. So remove most of the layers except the second and third one.
-![2](https://user-images.githubusercontent.com/118717731/220568731-c83cf9fc-1e61-490f-9b84-e2e4a575f0fe.png)
+![pcb](https://user-images.githubusercontent.com/118717731/220567652-5d880e35-4a34-4b83-b95e-611fb52e9a9f.png)
 
-Then the flag is visible. Flag: **HSAINNOS{PCB-FLAG}**.
+This is very cluttered and the flag is not visible. So, remove most of the layers except the second and third one.
+
+![pcb](https://user-images.githubusercontent.com/118717731/220568731-c83cf9fc-1e61-490f-9b84-e2e4a575f0fe.png)
+
+Then we see that the flag is written on the PCB. 
+
+Flag: **HSAINNOS{PCB-FLAG}**.
