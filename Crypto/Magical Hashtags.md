@@ -1,4 +1,4 @@
-# The second challenge in Crypto: Magical Hashtags | 50 Points
+# SHA encryption: Magical Hashtags | 50 Points
 For this problem a markdown file called magical_hashtags.md is given with the following content:
 ### Magical Collection of Hashtags and Corresponding Magic Values
 
@@ -27,18 +27,20 @@ After looking at the file again, I noticed that the word *hash*tag was used and 
 **#unicorn**, which means that we only need to use the encryption algorithm in one way, i.e. encrypt it. Since cryptocurrencies use *hash*ing algorithms
 as a fundamental component of their underlying blockchain technology, I wanted to try enrypting the hashtags with a hashing alogrithm. 
 
-Some popular hashing algorithms are SHA-256 or Scrypt. First with an online [SHA hash creator](http://www.unit-conversion.info/texttools/sha/), I attempted to encrypt
-the hashtag *#bigfoot* with well known SHA algorithms. I used SHA1, SHA224, SHA256 and finally SHA 384, which was a match. 
+Some popular hashing algorithms are [SHA-256](https://www.simplilearn.com/tutorials/cyber-security-tutorial/sha-256-algorithm) or 
+[Scrypt](https://en.wikipedia.org/wiki/Scrypt). First, with an online [SHA hash creator](http://www.unit-conversion.info/texttools/sha/), I attempted to encrypt
+the hashtag *#bigfoot* with well known SHA algorithms. I tried SHA1, SHA224, SHA256 and finally SHA 384, which was a match. 
 
 When *#bigfoot* was input, 
->69dbcecd1ec18e61a2c0353e95ab771b8cb70ceed945d63f5465513148ee396a8e419cc838e0aaac4d39ca8c79f82a36 
+
+    69dbcecd1ec18e61a2c0353e95ab771b8cb70ceed945d63f5465513148ee396a8e419cc838e0aaac4d39ca8c79f82a36 
 
 was the output, which matches the magic value in the given table. 
-
+# 
 To confirm that SHA384 was used, I tried to encrypt the other hashtags, which also worked. So when *#unicorn* was the input,
->bc6e68dcc859a676cb144d13491637728d74bb73aecffbf848d2c1ec36cced090de97b70ca808f650d037440ff799b31
 
-was the output.
+    bc6e68dcc859a676cb144d13491637728d74bb73aecffbf848d2c1ec36cced090de97b70ca808f650d037440ff799b31
 
-And that was basically it. Now this magic value just has to be put between HSAINNOS{ and }. 
-Flag: **HSAINNOS{bc6e68dcc859a676cb144d13491637728d74bb73aecffbf848d2c1ec36cced090de97b70ca808f650d037440ff799b31}**
+was the output. And that was basically it. Now this magic value just has to be put between HSAINNOS{ and }. 
+
+Flag: **HSAINNOS{bc6e68dcc859a676cb144d13491637728d74bb73aecffbf848d2c1ec36cced090de97b70ca808f650d037440ff799b31}**.
