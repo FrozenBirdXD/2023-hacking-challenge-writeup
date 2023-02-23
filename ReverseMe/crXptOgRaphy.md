@@ -1,4 +1,4 @@
-# One of the harder challenges: crXptOgRaphy | 50 Points
+# XOR encryption reversed: crXptOgRaphy | 50 Points
 For this problem two things are provided: 
 1. An encrypted message: "11 1c 14 1b 11 05 0a 0a 24 1c 2d 37 15 36 38 30 20 10 2d 1d 16 0d 35". 
 2. An executable called binary-static that was used to encryt the message.
@@ -18,6 +18,8 @@ That's why to execute the program a Unix based system is needed. I started a vir
 >![4](https://user-images.githubusercontent.com/118717731/220435848-728f36ee-f607-4d6d-a13f-78451edc06ca.png)
 
 -> The program takes a string as an input and prints the encrypted string as a hexadecimal to the console.
+
+## Analysis
 
 To analyse how the program encrypts the string, I opened it with [ghidra](https://ghidra-sre.org/). A software reverse engineering (SRE) suite of tools developed 
 by NSA's Research Directorate.
@@ -126,4 +128,6 @@ to the console.
 
     Decrypted message: HSAINNOS{ThePowerOfXOR}
 
-This is the flag for the problem. Flag: **HSAINNOS{ThePowerOfXOR}**.
+This is the solution for our problem. 
+
+Flag: **HSAINNOS{ThePowerOfXOR}**.
