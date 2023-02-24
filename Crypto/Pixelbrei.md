@@ -36,40 +36,41 @@ import javax.imageio.ImageIO;
 
 public class AdditiveMixing {
     public static void main(String[] args) throws Exception {
-        // Load the input images
+        // loads the three "scrambled" images
         BufferedImage image1 = ImageIO.read(new File("channel1.png"));
         BufferedImage image2 = ImageIO.read(new File("channel2.png"));
         BufferedImage image3 = ImageIO.read(new File("channel3.png"));
 
-        // Create the result image
+        // declares the result image and initialzes it with right dimensions
         int width = image1.getWidth();
         int height = image1.getHeight();
         BufferedImage resultImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
 
-        // Loop through each pixel and add the values
-        for (int x = 0; x < width; x++) {
-            for (int y = 0; y < height; y++) {
-                int pixel1 = image1.getRGB(x, y);
-                int pixel2 = image2.getRGB(x, y);
-                int pixel3 = image3.getRGB(x, y);
+        // loops through every pixel and adds the values
+        for (int i = 0; i < width; i++) {
+            for (int j = 0; j < height; j++) {
+                int pixel1 = image1.getRGB(i, j);
+                int pixel2 = image2.getRGB(i, j);
+                int pixel3 = image3.getRGB(i, j);
                 int resultPixel = pixel1 + pixel2 + pixel3;
-                resultImage.setRGB(x, y, resultPixel);
+                // sets the pixel values of the result image
+                resultImage.setRGB(i, j, resultPixel);
             }
         }
 
-        // Save the result image
-        ImageIO.write(resultImage, "png", new File("result_image.png"));
+        // saves the result image to a file called "resultImage.png"
+        ImageIO.write(resultImage, "png", new File("resultImage.png"));
 
     }
 }
 ```
 
-The resulting image is called "result_image.png" and when we view it, it looks like this:
+The resulting image is called "resultImage.png" and when we view it, it looks like this:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/118717731/220298891-2a4b2c58-67d4-4514-8c0b-b4322997dfc0.png" alt="channel1analysed" width="450"/>
 </p>
 
-And again the same as before. The flag was hidden in the three images. 
+And again the same as before, the flag is now visible. 
 
 Flag: **HSAINNOS{57820d3c}**.
 
