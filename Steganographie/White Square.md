@@ -38,8 +38,8 @@ values that are used to represent the pixels in the image. In our picture the PL
 
     FF FF FF FF FF FF 00 00 00
     
-This means that when the image is decoded the data representing the picture (index values) is used to look up the corresponding RGB values in the PLTE chunk, which in
-our case displays all white pixels. 
+This means that when the image is decoded/opened the data representing the picture (index values) is used to look up the correct RGB values in the PLTE chunk. In
+our case this displays all white pixels. 
 
 The image was transformed from using a lookup table to directly representing each pixel as a shade of gray when the color mode was set to grayscale. This enabled 
 for additional grayscale values to be utilized in the picture, revealing the before hidden QR-code. This is a form of [steganography](https://en.wikipedia.org/wiki/Steganography).
