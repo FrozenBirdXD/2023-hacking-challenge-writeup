@@ -1,8 +1,8 @@
 # A hidden 3D object?: Where is Json | 50 Points
-In this challenge, we are provided with a single file called '*where_is_json*' without a file extension.
+In this challenge, we are provided with a single file called '*where_is_json*'. But it doesn't have a file extension.
 
 ## Solution
-Since we don't know what kind of file it is, we have to analyse it. First, we can open the file in a hex editor, for example 
+Since the file type is unknown, we have to analyse it first. We open the file in a hex editor, for example 
 [010 editor](https://www.sweetscape.com/010editor/).
 There, looking at the first few bytes of the file, also known as the file signature, shows following:
       
@@ -16,8 +16,8 @@ contains a file named "*where_is_json.json*".
 
 ### JSON
 
-After opening "*where_is_json.json*" with a text editor like Notepad, we see a bunch of data that cannot be represented by text and a part with JSON data. After
-formatting the JSON, the first part of it looks like this:
+After opening "*where_is_json.json*" with a text editor like Notepad, we see a lot of data that cannot be represented by text, and a part containing JSON 
+data. Then, after formatting the JSON to make it more readable, the first part of it looks like this:
 ```JSON
 {
   "asset": {
@@ -79,11 +79,10 @@ indicator is that a generator called "Khronos glTF Blender" was used. A search o
 open standard 3D file format created for the fast transmission and loading of 3D scenes and models. "Blender ..." means that the 
 [Blender glTF 2.0 exporter](https://github.com/KhronosGroup/glTF-Blender-IO) was used to create the file, which means we are working with a 3D object file.
 
-The second indicator is that multiple names are visible, for example "imagetostl_mesh". This shows that something has to do with a 3D object because STL (short for 
-"STereoLithography") is a file format used to represent 3D models in a way that can be read by most 3D printing software.
+The second indicator is that multiple names are visible, for example "imagetostl_mesh". This shows that something has to do with a 3D object because STL (STereoLithography) is a file format used to represent 3D models.
 
-With a bit of searching on the internet we learn that a glTF (GL Transmission Format) file is made up of a JSON (JavaScript Object Notation) file that describes 
-the 3D model and one or more binary files that include the real 3D data, such as geometry, materials, textures, animations, and other elements. The JSON file
+With a bit of searching on the internet we learn that a glTF (GL Transmission Format) file consists of a JSON (JavaScript Object Notation) file that describes 
+the 3D model and one or more binary files (bin) that include the 3D data, such as materials, textures, and other elements. The JSON file
 specifies the scene graph and the binary files contain the actual data for these objects and are stored separately.
 
 Applying this knowledge to our problem we can assume that the JSON we found is the JSON file in glTF and the rest of the data that couldn't be displayed by the text
