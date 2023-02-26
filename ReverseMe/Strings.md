@@ -13,4 +13,4 @@ the rest, and that is of interest to us:
 
 If you look at the first letter or character in each row, you get the hidden flag. 
 
-Flag: **HSAINNOS{Strings}**.
+Flag: **HSAINNOS{STRINGS}**.
