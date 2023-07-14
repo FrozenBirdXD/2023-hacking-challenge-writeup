@@ -10,7 +10,7 @@ There are several ways to solve this problem:
 
 ## Easy way 
 You can analyse any of the pictures, e.g. channel1.png, with an online image analyser like [StegOnline](https://stegonline.georgeom.net/image) to see if anything is 
-hidden in the colors of the image. When you upload the first image to StegOnline and click "Browse Bit Planes" you, the following is displayed:
+hidden in the colors of the image. When you upload the first image to StegOnline and click "Browse Bit Planes", the following is displayed:
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/118717731/220293419-99115363-b7d5-495b-aefb-3767d70b969e.png" alt="channel1analysed" width="450"/>
@@ -19,7 +19,7 @@ hidden in the colors of the image. When you upload the first image to StegOnline
 And there you have it. The flag is conveniently written in the middle of the image. Flag: **HSAINNOS{57820d3c}**.
 
 ## Intended way
-There are 3 images given, but only 1 is needed to find to solution, why? The intended way to solve this problem is to use additive mixing. Additive mixing is used 
+There are 3 images given, but only 1 is needed to find the solution, why? The intended way to solve this problem is to use additive mixing. Additive mixing is used 
 in digital graphics, electronics, and other fields. When you encounter the term RGB, for example, in picture editing software, it refers to the three fundamental 
 colors red, green and blue.
 
